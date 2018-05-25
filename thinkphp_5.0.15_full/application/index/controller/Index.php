@@ -16,6 +16,8 @@ class Index
 	public function direc(){
 		$str = input('post.str',false);
 		$data = explode("\n",$str);
-		var_dump($data);
+		foreach($data as $v){
+			var_dump($v);die;
+		}
 	}
 }
